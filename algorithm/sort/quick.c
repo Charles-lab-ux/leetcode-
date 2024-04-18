@@ -4,8 +4,8 @@ void swap(int* a,int* b){
     *a=*b;
     *b=temp;
 }
-int quickSort(int arr[],int l,int r){
-    if(l>=r)return 0;
+void quickSort(int arr[],int l,int r){
+    if(l>=r)return;
     int temp=arr[l],i=l,j=r;
     while(i!=j){
         while(i<j&&arr[j]>=temp)j--;
